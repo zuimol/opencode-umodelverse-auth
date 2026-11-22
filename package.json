@@ -1,0 +1,33 @@
+{
+  "name": "opencode-umodelverse-auth",
+  "version": "0.1.0",
+  "description": "magpie / OpenCode provider plugin: UCloud UModelVerse (星图模型服务平台, api.modelverse.cn) OpenAI-compatible API with your own API key",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.mjs",
+    "models.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "magpie",
+    "magpie-plugin",
+    "opencode",
+    "opencode-plugin",
+    "opencode-umodelverse-auth",
+    "umodelverse",
+    "modelverse",
+    "ucloud",
+    "astraflow",
+    "xingtu"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
