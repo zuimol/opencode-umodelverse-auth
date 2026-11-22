@@ -56,7 +56,10 @@ export default async function UModelVersePlugin(input = {}) {
           type: 'api',
           label: 'API Key（UCloud UModelVerse）',
           placeholder: '粘贴控制台里的 API 密钥',
-          async authorize(inputs) {
+        prompts: [
+        { type: 'text', key: 'apiKey', message: '粘贴 UModelVerse API Key（astraflow.ucloud.cn → 认证鉴权）', placeholder: '粘贴控制台里的 API 密钥', required: true },
+      ],
+        async authorize(inputs) {
             const key =
               typeof inputs === 'string'
                 ? inputs.trim()
