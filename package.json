@@ -1,7 +1,7 @@
 {
   "name": "opencode-umodelverse-auth",
   "version": "0.1.0",
-  "description": "magpie / OpenCode provider plugin: UCloud UModelVerse (星图模型服务平台, api.modelverse.cn) OpenAI-compatible API with your own API key",
+  "description": "magpie / OpenCode provider plugin: UCloud UModelVerse (鏄熷浘妯″瀷鏈嶅姟骞冲彴, api.modelverse.cn) OpenAI-compatible API with your own API key",
   "type": "module",
   "main": "./index.mjs",
   "exports": {
@@ -12,7 +12,8 @@
     "index.mjs",
     "models.mjs",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "assets"
   ],
   "keywords": [
     "magpie",
@@ -29,5 +30,13 @@
   "license": "MIT",
   "engines": {
     "node": ">=20"
+  },
+  "magpie": {
+    "name": "星图 UModelVerse",
+    "summary": {
+      "en": "UCloud UModelVerse（星图模型服务平台）：OpenAI 兼容端点 api.modelverse.cn/v1，29 个聊天模型，用自己的 API Key。",
+      "zh": "UCloud UModelVerse（星图模型服务平台）：OpenAI 兼容端点 api.modelverse.cn/v1，29 个聊天模型，用自己的 API Key。"
+    },
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATnSURBVHgBtVZpTFxVFD73vn2WMuzQRQphWjfUappUKHSFtpEEJEY0qKnV9IfBBE2s/qHRFDWk+kdt3KLVRNMmRqOEmC6xKSoVLWCJGkBSGipUkG0YmDfru9d73/CGN4Qmw4+e5OS+98695zvnO2fOHYBVCKUUNb4yYzQ1TxP+vJqzONWNzDE+/OKsrqiANQ1Q/UHf1dWApQz04WeBKqcTyZidwALA1JhacKQ5XJzq+ZSAeDYdnZF2hABjTCEUwMCfz7TTAW5LxUdKm2oaZo5mZyMBCxQEkZKuCw5WI4DsLEB1deHDqfjAVsRDQ1QZolSBFbLJzsRHTcoQBV1Hr0oKubRoRqM36InlteLvo6M00/7N3HDuHPW+2Roa0BwUTUwAUmTUculnrZkdEJ5u9F1wOVGFrFAIhGP0g9YsYeee4DcCRrWWE58PtfVcVupGR0HuHf23JUyjL7idCCkaodmill9SlDthAtU/HnhuZhafkBUCikZhdlIAnoHfT8nW8igVJSJIDKh8m1ZRu1/7aVtZ0HBogDl94SCGrTuDxr3bF4KaglyySoEHZWkMkV2V3sKLiZRLy3WSmUURN4oShZlJEYpuj/CamAc40MiQNHZjRMwHgnDRHREo26cDbw5BgsQeC8DtMWBkGBtP7rlN5P5FC6igAD2jh+gnrHURP7iuMAo8YrM2plLYXBJZd39ZEATW3jyYaBSZTi27whjhti/f8cC1fpk8WGrUJ9XIKnrF3oXo2rWA7ZFZan6TmapLq8RWzUlAdVA4+5ULBn5XwekmZoBzfiA9v2mC5T+REUKIvPtxsPiXzthVFiFaysSmwtKzymp5uUODv7pVE4yLw0UsFui3X6uuDRsgub0taXxWHVkI0GumQ1Pp0optK6Pt9PtpMNwvJ0DsogeRf/16CNu/Lf/BorQ0oJzvuMa5RzgZTJI413BTCQZphDN0U6DzP4aLRBE2rkibTSlz8USTDzbdE4FgfBwlSboHstra/FlJGdhf9tfO0bx8tNgAhCmYqySzVWXvtlVatKsOYu7//pQb+rpUWOOJ12lqEub7rqgeK7NEMzQcWmjC2IDltCXVhr3zJhBstbOk5qAfGp73AZ9GJ497YG5acz51KFzJTGeTMjpQO2fk5CCztbmTkUEZHqjQTQCr3f/olf6+PqhsMqIY7twSgr2PLJj1YpOD7YEkFjzpBK73YbKvtFBIAD3aoB+RFKOVb3Cw38Gfv7L5wiaCb5ZO1zToGYLMJgajy+sV76vbnd5Xuj1oqOwC5Kd5jXYc0GNlD80Bu68ESY5PF0uJQHaVaN6LZjM8XK2dAiBm9N2dspGbbxw73qrKvT1ajh4mvRZ9/UOhXj5oXQ50xqSBMaexGv3Qrpyu3lKg7t5cgJEAbxlggCgigkRK71aLOxIZ8bHOhLKrYk1xMczzZ4tSPjGOvTcVdTop5hE63filk287KiUJV3H77Cwlvd2azM4Y9sYaHx935ubm6pYvMyPrxetFfjvIoo24Xfh1qyEQjrVGQkKVZU9zw8vLQbjk5eUF7L5S+nPBs3rjo/FoRjoyswrMY/ju8zUw8R9rkCsaXh7cSpLSVc6zKtool7PLjvCsMnMNiEWR0fKacFcqICkDcXmsKqNLj8Zm4iOJwo7q+eGaGnkQboUwCqVP28eML87/E17tH8j/Ab8kHd5so9q8AAAAAElFTkSuQmCC"
   }
 }
