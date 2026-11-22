@@ -57,7 +57,8 @@ export default async function UModelVersePlugin(input = {}) {
           label: 'API Key（UCloud UModelVerse）',
           placeholder: '粘贴控制台里的 API 密钥',
         prompts: [
-        { type: 'text', key: 'apiKey', message: '粘贴 UModelVerse API Key（astraflow.ucloud.cn → 认证鉴权）', placeholder: '粘贴控制台里的 API 密钥', required: true },
+        { type: 'text', key: 'accountName', message: '第一栏＝凭证标识：给它起个名字（如「星图主号」），不是 Key', required: false },
+        { type: 'text', key: 'apiKey', message: '第二栏＝粘贴 UModelVerse API Key（astraflow.ucloud.cn → 认证鉴权）', placeholder: '粘贴控制台里的 API 密钥', required: true },
       ],
         async authorize(inputs) {
             const key =
@@ -86,7 +87,7 @@ export default async function UModelVersePlugin(input = {}) {
                   type: 'success',
                   key,
                   metadata: {
-                    accountName: 'UModelVerse API Key',
+                    accountName: typeof inputs?.accountName === 'string' && inputs.accountName.trim() ? inputs.accountName.trim() : undefined,
                     models: count,
                     baseUrl,
                   },
